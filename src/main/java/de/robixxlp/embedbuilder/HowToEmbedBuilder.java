@@ -3,13 +3,16 @@ package de.robixxlp.embedbuilder;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
+/**
+ * Embeds for Discord can be created with the EmbedBuilder. Said embeds can then be used in many ways.
+ */
 public class HowToEmbedBuilder extends ListenerAdapter {
 
-    /*
-    Mit dem EmbedBuilder können Embeds für Discord erstellt werden. Besagte Embeds können dann vielseitig verwendet werden.
-    */
-
-        //deklarieren des EmbedBuilders
-        EmbedBuilder builder = new EmbedBuilder();
-
+    /**
+     * This method creates a new embed.
+     */
+    public void createEmbed() {
+        // A new instance of Embed Builder is created here.
+        final EmbedBuilder builder = new EmbedBuilder();
+    }
 }

@@ -7,15 +7,10 @@ import org.jetbrains.annotations.NotNull;
 public class HowToSlashCommands extends ListenerAdapter {
 
     @Override
-    public void onSlashCommandInteraction(@NotNull SlashCommandInteractionEvent event){
+    public void onSlashCommandInteraction(final @NotNull SlashCommandInteractionEvent event){
+        // First you have to check if the name of the command you want to execute is the same as the name of the command in your main class.
+        if (event.getName().equals("commandname")) return;
 
-        /*
-        German:
-        Als erstes muss abgefragt werden, ob der Name des auszuführenden Commands, dem Namen des Commands, in deiner Main Klasse entspricht.
-
-        English:
-        First you have to check if the name of the command you want to execute is the same as the name of the command in your main class.
-         */
-        if(event.getName().equals("commandname")) return;
+        // Your command code
     }
 }
